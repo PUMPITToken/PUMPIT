@@ -1,0 +1,180 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+html {
+ 
+  overflow-x: hidden;
+}
+section#main{
+     background-image:  url("Images/backgroundHD.png");
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   
+}
+section#Roadmap{
+   width: 100%;  
+    height: 100vh;
+}
+#roadmapDiv{
+    margin-top: 10%;
+    width:100%;
+    height: 80vh;
+    text-align: center;
+}
+#roadmapDiv p{
+    font-family: 'Roboto', sans-serif;
+    color:#adabab;
+    font-weight: bold;
+    font-size: 2.2vh;
+}
+#roadmapDiv img{
+     display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#Container{
+    scroll-behavior: smooth;
+    overflow:auto;
+     overflow-x: hidden;
+    width:101%;
+    height: 100%;
+    top:0px;
+    left:0px;
+    position:absolute;
+}
+
+
+#description{
+  font-family: 'Roboto', sans-serif;
+  color:#c3c3c3;
+  padding-top: 30vh;
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  font-size: 3vh;
+
+}
+
+#buttons{
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+    width: 100%;
+    justify-content: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.buttonDesc {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color:#c3c3c3;
+    font-weight: bold;
+    font-size: 1.5vh;
+}
+
+.button{
+    width: 200px;
+    height: 48%;
+    margin:20px;
+    background-image: url(Images/Button.png);
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+.button:hover{
+    transform: scale(0.95);
+}
+.button img{
+    width:19%;
+    height: auto;
+    margin:20px;
+}
+
+.buttonDesc{
+  margin-top: 1%;
+    text-align: center;
+}
+
+
+
+
+#footerLink {
+   position: absolute;
+    right: 0px;
+    bottom: 0px;
+    
+    
+}
+#footerLink img{
+     width: 20vh;
+    margin-right:35%;
+    margin-top: 5%;
+    
+}
+
+#headerLink {
+  position: absolute;
+    left: 0px;
+    top: 0px;
+    
+}
+#headerLink img{
+    width: 20vh;
+    margin-left:35%;
+    margin-top: 10%;
+}
+
+/*phone scaling*/
+@media only screen and (max-width: 500px) {
+  section#main {
+      height: 140vh;
+    box-sizing:border-box;
+    transform-origin: 0 0;
+    -moz-transform-origin:0 0;
+    -o-transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+      background-position: left;
+      
+  }
+   section#Roadmap{
+     height: 80vh;  
+    }
+    #description{
+        padding-top: 45vh;
+        
+    }
+    
+    #footerLink {
+       position: inherit;
+        justify-content: center;
+    }
+    #footerLink img{
+        width:180px;
+         display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #headerLink img{
+  
+        margin-left:5%;
+    }
+    #roadmapDiv img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    #roadmapDiv{
+        margin-top: 35%;
+      
+    }
+}
+
+
