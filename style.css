@@ -131,7 +131,7 @@ section#Roadmap{
 /*phone scaling*/
 @media only screen and (max-width: 500px) {
   section#main {
-      height: 100vh;
+      height: 125vh;
     transform-origin: 0 0;
     -moz-transform-origin:0 0;
     -o-transform-origin: 0 0;
