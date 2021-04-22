@@ -1,0 +1,273 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+html {
+ 
+  overflow-x: hidden;
+}
+
+/* sections*/
+
+section#main{
+     background-image:  url("Images/backgroundHD.png");
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+section#Roadmap{
+    background-image:  url("Images/roadmap.png");
+    width: 100%;
+    height: 100%; 
+
+  
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size:  cover;
+}
+
+
+
+#Container{
+    scroll-behavior: smooth;
+    overflow:auto;
+     overflow-x: hidden;
+    width:101%;
+    height: 100%;
+    top:0px;
+    left:0px;
+    position:absolute;
+}
+
+
+#description{
+  font-family: 'Roboto', sans-serif;
+  color:#c3c3c3;
+  padding-top: 30vh;
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  font-size: 3vh;
+
+}
+
+/* buttons styles */
+
+#buttons{
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+    width: 100%;
+    justify-content: center;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.buttonDesc {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color:#c3c3c3;
+    font-weight: bold;
+    font-size: 1.5vh;
+}
+
+.button{
+    width: 200px;
+    height: 48%;
+    margin:20px;
+    background-image: url(Images/Button.png);
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+.button:hover{
+    transform: scale(0.95);
+}
+.button img{
+    width:19%;
+    height: auto;
+    margin:20px;
+}
+
+.buttonDesc{
+  margin-top: 1%;
+    text-align: center;
+}
+
+/* bottom bscscan image and top pumpit logo styles */
+
+
+#footerLink {
+   position: absolute;
+    right: 0px;
+    bottom: 0px;
+    
+    
+}
+#footerLink img{
+     width: 20vh;
+    margin-right:35%;
+    margin-top: 5%;
+    
+}
+
+#headerLink {
+  position: absolute;
+    left: 0px;
+    top: 0px;
+    
+}
+#headerLink img{
+    width: 20vh;
+    margin-left:25%;
+    margin-top: 10%;
+}
+
+/*tokenomics */
+
+#tokenomics{
+    text-align: center; 
+    margin-top: 1.5%;
+}
+#tokenomics img{
+    width:30%;
+}
+
+/*about us styles */
+
+#aboutUsBtn{
+    
+}
+#aboutUsBtn img{
+    float:left;
+    width:12vh;
+    margin-left: 2%;
+    margin-top: 4%;
+}
+#aboutUsBtn img:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 2000px;
+}
+
+#aboutUsBox{
+    width:60%;
+    min-height: 70vh;
+    height: auto;
+    background-color: white;
+    border-radius: 8px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0; 
+    right: 0; 
+    margin-top: 8%;
+        display: none;
+
+    
+   
+}
+#aboutUsBox img{
+    width:30vh;
+    margin: auto;
+    display: block;
+    margin-top: 2%;
+    
+}
+#aboutUsBox p{
+    line-height: 35px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin-left: 15vh;
+    margin-right: 10vh;
+    margin-top: 25px;
+}
+#aboutUsBox a{
+    text-decoration: none;
+}
+#aboutUsBox a:hover{
+    color:gray;
+}
+.layer{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    position: absolute;
+    display: none;
+    
+}
+
+/*phone scaling*/
+@media only screen and (max-width: 700px) {
+  section#main {
+      height: 160vh;
+    transform-origin: 0 0;
+    -moz-transform-origin:0 0;
+    -o-transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+      background-position: left;
+      
+  }
+   section#Roadmap{
+       background-attachment: scroll;
+       
+    }
+    #description{
+        padding-top: 55vh;
+        
+    }
+    
+    #footerLink {
+       position: inherit;
+        justify-content: center;
+    }
+    #footerLink img{
+        width:180px;
+         display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #aboutUsBtn img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        float:inherit;
+    }
+    #headerLink img{
+  
+        margin-left:5%;
+    }
+   
+    #roadmapDiv{
+        margin-top: 100%;
+      
+    }
+    #tokenomics img{
+        width:80%;
+    }
+    /*about us scaling for phone*/
+    #aboutUsBox{
+        width: auto;
+        height: auto;
+    }
+    
+    #aboutUsBox p{
+    margin-left: 8vh;
+    margin-right: 5vh;
+    margin-top: 105px;
+    }
+    #mainSectionLayer{
+        height: 217vh;
+    }
+}
+/* scaling for mac */
+@media only screen and (width: 2560px) {
+    #headerLink img{
+    margin-top: 0%;
+       margin-left:3%;
+    }
+}
